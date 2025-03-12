@@ -5,9 +5,9 @@ require("dotenv").config();
 
 const app = express();
 
-// ✅ Enable CORS for specific frontend
+// ✅ Fix CORS Issue
 app.use(cors({
-    origin: "https://network-frontend-one.vercel.app", 
+    origin: ["https://network-frontend-ueqr.vercel.app"], // Allow requests from your frontend
     methods: "GET,POST,PUT,DELETE",
     credentials: true 
 }));
